@@ -2,6 +2,7 @@ package org.example;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 public class Quiz {
     private List<Preguntas> preguntas;
@@ -29,7 +30,7 @@ public class Quiz {
     public void realizarPregunta(Preguntas pregunta) {
         pregunta.mostrarPregunta();
         System.out.print("Indique su respuesta: ");
-        int respuestaUsuario = Integer.parseInt(scanner.nextline());
+        int respuestaUsuario = Integer.parseInt(Scanner.nextLine());
         evaluarPregunta(pregunta, respuestaUsuario);
     }
 
